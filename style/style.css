@@ -1,0 +1,247 @@
+.nav-bar {
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+    background-color: white;
+    margin: 0 auto;
+    border-bottom: 3px rgb(35%, 46%, 25%) solid;
+}
+.logo  img{
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.nav-bar-ul  {
+    position: absolute;
+    top: 50px;
+    right: 5%;
+    display: block;
+    overflow: hidden;
+    padding: 20px;
+    
+}
+.nav-bar-ul  a {
+    color: rgb(35%, 46%, 25%);
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    transition: all 0.6s;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+
+}
+.activee {
+    background-color: rgb(35%, 46%, 25%);
+    color: white !important;
+}
+.nav-bar-ul a:hover {
+    background-color: rgb(35%, 46%, 25%);
+    padding: 20px;
+    color: white;
+    transform:translateX(10%) scale(1,3);
+}
+
+.top-img img {
+    position: relative;
+    width: 250px;
+    left: 50%;
+    margin-top:-18px;
+    transform: translate(-50%,-50%);
+}
+.fa-bars {
+    position: absolute;
+    color: rgb(35%, 46%, 25%);
+    height: 100px;
+    top: 0px;
+    right: 0px;
+    margin: 70px 50px;
+    justify-items: center;
+    font-size: 250%;
+    cursor: pointer;
+}
+.clearfix{
+  overflow: hidden;
+}
+.card:hover {
+  transform: translate(1px) scale(1.1) !important;
+  z-index: 99;
+  transition: all 0.3s  ease-in-out;
+
+}
+
+.bant {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: solid 1px #597540;
+  padding: 15px;
+}
+
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 10px;
+  transform: translate(-50%,-50%);
+}
+.mouse{
+  width: 35px;
+  height: 60px;
+  border: 2px solid #597540;
+  border-radius: 60px;
+}
+.mouse::before{
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 5px;
+  background: rgb(35%, 46%, 25%);
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 2s infinite;
+}
+@keyframes mouse {
+  from{
+    opacity: 1;
+    top: 5px;
+  }
+  to{
+    opacity: 0;
+    top: 60px;
+  }
+}
+
+
+@media only screen and (max-width:1000px) {
+    .nav-bar-ul {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+    }
+    .middle {
+      display: none;
+    }
+
+    
+    
+
+
+}
+
+@media only screen and (min-width:1000px) {
+    .fa-bars {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width:600px) {
+    .top-img {
+        display: none;
+    }
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgb(35%, 46%, 25%);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    z-index: 9999999;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+    transform: translate(0px) rotate(4deg);
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:rgb(35%, 46%, 25%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  .mini-bar-img {
+      position: absolute;
+      left: 50%;
+      width: 200px !important;
+      bottom:0%;
+      transform:translate(-50%,-50%);
+      cursor: pointer;
+     
+  }
+
+  .fa-angle-up {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    padding: 20px;
+    color: white;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: rgb(35%, 46%, 25%);
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 88;
+  }
+  .fa-angle-up:hover {
+    transform: translate(0) scale(1.1);
+  }.card {
+    cursor: pointer;
+  }
+  
+  
+
+  
+ 
+
+
+
+  
+ 
+  
+
+ 
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+
